@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Static Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <!-- original KPBS CSS from site -->
+    <link rel="stylesheet" href="@@webRoot/css/style.css">
+    <link rel="stylesheet" href="@@webRoot/css/style.min.css">
+</head>
+
+<body>
+    <div class="passport-container">
+        <!-- 
+            Passport Hero: 
+            data-less-file="passport-hero.less" 
+        -->
+        @@include('src/blocks/passport-hero.html')
+        <!-- 
+            Passport Image Text Grid: 
+            data-less-file="passport-image-text-grid" 
+        -->
+        @@include('src/blocks/passport-image-text-grid.html')
+        <!-- 
+            Passport Table 
+            data-less-file="passport-table.less" 
+        -->
+        @@include('src/blocks/passport-table.html')
+        <!-- 
+            Passport Circle Banner: 
+            data-less-file="passport-circle-banner.less" 
+        -->
+        @@include('src/blocks/passport-circle-banner.html')
+        <!-- 
+            Passport Steps: 
+            data-less-file="passport-steps.less" 
+        -->
+        @@include('src/blocks/passport-steps.html')
+        <!-- 
+            Passport Device Banner: 
+            data-less-file="passport-device-banner.less" 
+        -->
+        @@include('src/blocks/passport-device-banner.html')
+        <!-- 
+            Passport FAW: 
+            data-less-file="passport-faq.less" 
+        -->
+        @@include('src/blocks/passport-faq.html')
+        <!-- 
+            Passport Footer: 
+            data-less-file="passport-footer.less" 
+        -->
+        @@include('src/blocks/passport-footer.html')
+        
+    </div>
+
+    <script src="@@webRoot/dist/js/main.min.js"></script>
+</body>
+
+</html>

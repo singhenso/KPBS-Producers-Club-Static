@@ -1,0 +1,94 @@
+/* =========== STARTbase remove kpbs stlye.css elements ===========*/
+
+.passport-container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+
+/* =========== END base remove kpbs stlye.css elements ===========*/
+@primary-purple: #0B135C;
+@btn-border: 1px solid #2638C4;
+@btn-purple: #2638C4;
+@text-blue: #2638C4;
+@primary-purple-gradient: radial-gradient(55em 60em at -97% 50%, #0B135C 50%, transparent 50%);
+@primary-grey-bg: #FAFAFA;
+@min-height: 440px;
+@circle-width: 400px;
+@overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.45);
+
+/* 
+=====================================================================
+button block
+=====================================================================
+*/
+.arrow-btn {
+    border-radius: 50px;
+    background-clip: padding-box;
+    font-size: 1.125em;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: @btn-border;
+    background-color: #fff;
+    box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    cursor: pointer;
+    a {
+        cursor: pointer;
+    }
+
+    svg {
+        position: relative;
+        transition: right 0.2s ease 0s;
+        right: 4px;
+    }
+
+    &:hover {
+        box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
+        color: #fff;
+
+
+        svg {
+            right: 0px;
+            position: relative;
+        }
+    }
+
+    svg {
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    &.white-arrow-btn {
+        background-color: #fff;
+        color: @text-blue;
+    }
+
+    &.purple-arrow-btn {
+        background-color: @btn-purple;
+        color: #fff;
+        border: none;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    &.transparent-arrow-btn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+}
