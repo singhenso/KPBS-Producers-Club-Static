@@ -13,6 +13,7 @@
     "gulp-file-include": "^2.3.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-include": "^2.4.1",
-    "gulp-replace": "^1.1.4"
+    "gulp-replace": "^1.1.4",
+    "i": "^0.3.7"
   }
 }
