@@ -9,6 +9,7 @@
 
 /* =========== END base remove kpbs stlye.css elements ===========*/
 @primary-purple: #0B135C;
+@primary-blue: #006cb4;
 @btn-border: 1px solid #2638C4;
 @btn-purple: #2638C4;
 @text-blue: #2638C4;
@@ -25,7 +26,7 @@ button block
 =====================================================================
 */
 .arrow-btn {
-    border-radius: 50px;
+    border-radius: 6px;
     background-clip: padding-box;
     font-size: 1.125em;
     display: inline-block;
@@ -34,7 +35,6 @@ button block
     padding: 10px 25px;
     border: @btn-border;
     background-color: #fff;
-    box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
     transition: all 0.3s ease 0s;
     white-space: nowrap;
     cursor: pointer;
@@ -71,6 +71,17 @@ button block
 
     &.purple-arrow-btn {
         background-color: @btn-purple;
+        color: #fff;
+        border: none;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    &.blue-arrow-btn {
+        background-color: @primary-blue;
         color: #fff;
         border: none;
 

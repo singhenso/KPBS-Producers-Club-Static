@@ -11,6 +11,33 @@
     }
 
     &__logo {}
-    &__text-img-cta {}
+    &__text-img-cta {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        padding: 60px 20px;
+        img {
+            box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            vertical-align: middle;
+            border-style: none;
+            max-width: 100%;
+        }
+        border-bottom: 1px solid #E9E9E9;
+    }
+    &__contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        padding: 30px 20px;
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            margin:0;
+            padding:0;
+        }
+    }
 }
 
