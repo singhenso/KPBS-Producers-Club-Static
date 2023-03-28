@@ -3,4 +3,77 @@
 Giving
 =====================================================================
 */
-@import "src/less/global/base_buttons.less"; 
+@import "src/less/global/base_buttons.less";
+@import "src/less/global/modules/producer-hero-banner.less";
+
+.producer-giving {
+    background-color: @grey-bg;
+
+    ul {
+        padding: 15px 0;
+
+        li {
+            margin-bottom: 15px;
+            display: flex;
+
+            svg {
+                margin-right: 10px;
+                position: relative;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__membership {}
+
+    &__card {
+        position: relative;
+        border-radius: 10px;
+
+        &__inner {
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid #edeff2;
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+        }
+
+        &__head {
+            text-align: center;
+            padding: 36px 12px 15px;
+            border-top: 5px solid #C0C0C0;
+            border-radius: 5px 5px 0 0;
+
+            &__pricing {
+                font-size: 2.688rem;
+                color: #1b243f;
+                display: inline-block;
+                font-weight: 700;
+                line-height: 1;
+                position: relative;
+            }
+
+            &__button {
+                a {
+                    background-color: #1b243f;
+                    color: #fff;
+                    display: block;
+                    margin: 8px 17px 0;
+                    border-radius: 5px;
+                    box-shadow: 0 6px 13px 2px rgba(0, 0, 0, .11);
+                    text-decoration: none;
+                    font-weight: 500;
+                    border: 0;
+                    box-sizing: border-box;
+                    text-align: center;
+                    padding: 9px 26px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
