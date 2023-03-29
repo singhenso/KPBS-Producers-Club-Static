@@ -10,33 +10,42 @@
     <!-- original KPBS CSS from site -->
     <link rel="stylesheet" href="@@webRoot/css/style.css">
     <link rel="stylesheet" href="@@webRoot/css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,500" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-        <!-- 
+    <!-- 
             Producer-hero.html: 
             data-less-file="passport-hero.less" 
         -->
-        @@include('src/blocks/producer-hero.html')
+    @@include('src/blocks/producer-hero.html')
 
-        <!-- 
+    <!-- 
             Producer-giving.html: 
             data-less-file="passport-giving.less" 
         -->
-        @@include('src/blocks/producer-giving.html')
-        <!-- 
+    @@include('src/blocks/producer-giving.html')
+    <!-- 
             producer-events.html: 
             data-less-file="passport-hero.less" 
         -->
-        @@include('src/blocks/producer-events.html')
-        <!-- 
+    @@include('src/blocks/producer-events.html')
+    <!-- 
             producer-facebook.html: 
             data-less-file="passport-facebook.less" 
         -->
-        @@include('src/blocks/producer-facebook.html')
-        
+    @@include('src/blocks/producer-facebook.html')
+    <!-- 
+            producer-testimonial.html: 
+            data-less-file="passport-testimonial.less" 
+        -->
+    @@include('src/blocks/producer-testimonial.html')
 
+    <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
     <script src="@@webRoot/dist/js/main.min.js"></script>
 </body>
 

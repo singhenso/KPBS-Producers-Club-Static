@@ -1,0 +1,60 @@
+<div class="producer-testimonial">
+
+    <!-- Flickity Carousel -->
+    <div class="carousel pc-container">
+        <div class="testimonial-slider">
+            <div class="gallery-cell">
+                <div class="testimonial">
+                    <blockquote>"Being a Producers Club member has been incredibly rewarding - from exclusive events to
+                        engaging discussions, it's opened doors to opportunities I wouldn't have had otherwise. I highly
+                        recommend joining if you're looking to make a difference and support public broadcasting."
+                    </blockquote>
+                    <span class="testimonial-author">
+                        <h5>Jason Briggs</h5>
+                        <span>Interface Designer — Yoke</span>
+                    </span>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="testimonial">
+                    <blockquote>"Joining the KPBS Producers Club has been one of the best decisions I've made. The events are always top-notch, and I love being a part of a community that values public broadcasting as much as I do. The staff is incredibly knowledgeable and passionate about what they do, and it's a joy to support their work."
+                    </blockquote>
+                    <span class="testimonial-author">
+                        <h5>Rebecca Jensens</h5>
+                        <span>Web Producer — Chase Bank</span>
+                    </span>
+                </div>
+            </div>            <div class="gallery-cell">
+                <div class="testimonial">
+                    <blockquote>"The Producers Club is a wonderful way to support public broadcasting and get involved in the community. I've had the opportunity to meet some amazing people and attend some truly unique events. It's so rewarding to know that my contribution is making a difference and helping to keep quality programming on the air."
+                    </blockquote>
+                    <span class="testimonial-author">
+                        <h5>Nancy Stun</h5>
+                        <span>News Report — Honda</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end of row-->
+</div>
+
+
+
+</div>
+
+
+<script>
+    // Initialize Flickity
+    document.addEventListener('DOMContentLoaded', function () {
+        let elem = document.querySelector('.testimonial-slider');
+        let flkty = new Flickity(elem, {
+            // Options
+            cellAlign: 'left',
+            contain: true,
+            autoPlay: 5000
+        });
+    });
+</script>
