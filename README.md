@@ -35,5 +35,5 @@ That's it! You can now use these packages in your Gulpfile to automate your buil
 ## How to view the static page
 ### Installation Open the index.html
 
-After installling, compile with gulp and then open dist/index.html
+Open dist/index.html
 
