@@ -9,9 +9,11 @@ Giving
 .producer-giving {
     background-color: @grey-bg;
     padding: 60px 20px;
+
     .max-width-mixin(@tablet; {
-        padding: 30px 20px;
-    });
+            padding: 30px 0px;
+        });
+
     .producer-hero__text-img-cta {
         padding-top: 0;
     }
@@ -36,11 +38,13 @@ Giving
             margin-bottom: 0;
         }
     }
+
     &__tier {
-        padding:  60px 20px;
+        padding: 60px 20px;
+
         .max-width-mixin(@tablet; {
-            padding: 30px 20px;
-        });
+                padding: 30px 20px;
+            });
     }
 
     &__membership {
@@ -206,10 +210,11 @@ Giving
         justify-content: space-between;
         padding: 25px 20px;
         align-items: center;
+
         .max-width-mixin(@tablet; {
-            flex-direction: column;
-            gap: 30px;
-        });
+                flex-direction: column;
+                gap: 30px;
+            });
 
         &__text {
             font-size: 26px;
@@ -223,10 +228,21 @@ Giving
         &__buttons {
             display: flex;
             gap: 20px;
+
             .max-width-mixin(@tablet; {
-                flex-direction: column;
-                gap: 30px;
-            });
+                    flex-direction: column;
+                    gap: 20px;
+
+                    a {
+                        background-color: #33a99d;
+                        color: #fff;
+                        border: none;
+                        display: flex;
+                        width: 205px;
+                        justify-content: space-between;
+
+                    }
+                });
         }
     }
 }

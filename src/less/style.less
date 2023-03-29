@@ -2,6 +2,9 @@
 body {
         --topBarHeight: 0 !important;
         --navBarHeight: 0 !important;
+        padding-top: var(--headerHeight);
+    --persistentPlayerHeight: 0;
+    --headerHeight: calc(var(--topBarHeight) + var(--persistentPlayerHeight) + var(--navBarHeight));
     }
 }
 
