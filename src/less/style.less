@@ -1,15 +1,15 @@
-@media only screen and (min-width: 1240px) {
 body {
-        --topBarHeight: 0 !important;
-        --navBarHeight: 0 !important;
-        padding-top: var(--headerHeight);
+    --topBarHeight: 0 !important;
+    --navBarHeight: 0 !important;
+    padding-top: var(--headerHeight);
     --persistentPlayerHeight: 0;
     --headerHeight: calc(var(--topBarHeight) + var(--persistentPlayerHeight) + var(--navBarHeight));
-    }
+    padding: 0;
 }
 
+
 // Base style with buttons
-@import "src/less/global/base_buttons.less"; 
+@import "src/less/global/base_buttons.less";
 
 // Modules
 @import "src/less/global/modules/producer-hero-banner.less"; // Producer-hero-banner.html:
