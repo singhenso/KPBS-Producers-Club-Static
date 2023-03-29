@@ -1,6 +1,6 @@
 /* 
 =====================================================================
-Facebook Banner
+Testimonial Slide
 =====================================================================
 */
 @import "src/less/global/base_buttons.less";
@@ -10,7 +10,10 @@ Facebook Banner
 .producer-testimonial {
     padding: 0 0 60px;
     .max-width-mixin(@mobile; {
-        padding: 0 0 40px;
+        padding: 0 0 70px;
+        .flickity-prev-next-button {
+            display: none;
+        }
     });
     .testimonial-slider {
         background: #fff;
