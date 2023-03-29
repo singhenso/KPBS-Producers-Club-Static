@@ -31,14 +31,36 @@ Media Queries
 // Mixin for max-width media queries
 .max-width-mixin(@width; @rules) {
     @media (max-width: @width) {
-      @rules();
+        @rules();
     }
+}
+
+// Define breakpoints
+@mobile: 425px;
+@tablet: 768px;
+
+/*
+  .wrapper {
+  // Your base styles here
+
+  .element {
+    // Your element base styles here
+
+    // Mobile media query
+    .max-width-mixin(@mobile; {
+      // Your mobile styles here
+    });
+
+    // Tablet media query
+    .max-width-mixin(@tablet; {
+      // Your tablet styles here
+    });
   }
-  
-  // Define breakpoints
-  @mobile: 425px;
-  @tablet: 768px;
-  
+}
+*/
+
+
+
 /* 
 =====================================================================
 button block
@@ -57,6 +79,7 @@ button block
     transition: all 0.3s ease 0s;
     white-space: nowrap;
     cursor: pointer;
+
     a {
         cursor: pointer;
     }
@@ -88,6 +111,7 @@ button block
         color: @text-blue;
     }
 
+    // purple
     &.purple-arrow-btn {
         background-color: @btn-purple;
         color: #fff;
@@ -99,8 +123,23 @@ button block
             }
         }
     }
+
+    // blue
     &.blue-arrow-btn {
         background-color: @primary-blue;
+        color: #fff;
+        border: none;
+
+        svg {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+
+    // green
+    &.green-arrow-btn {
+        background-color: @primary-green;
         color: #fff;
         border: none;
 

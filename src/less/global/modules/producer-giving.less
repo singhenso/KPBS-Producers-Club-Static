@@ -8,6 +8,13 @@ Giving
 
 .producer-giving {
     background-color: @grey-bg;
+    padding: 60px 20px;
+    .max-width-mixin(@tablet; {
+        padding: 30px 20px;
+    });
+    .producer-hero__text-img-cta {
+        padding-top: 0;
+    }
 
     ul {
         padding: 15px 0;
@@ -19,6 +26,9 @@ Giving
             svg {
                 margin-right: 10px;
                 position: relative;
+
+                min-width: 20px;
+
             }
         }
 
@@ -36,6 +46,11 @@ Giving
         &:last-of-type {
             margin-bottom: 0;
         }
+
+        // Tablet media query
+        .max-width-mixin(@tablet; {
+                flex-direction: column;
+            });
     }
 
     &__card {
@@ -54,8 +69,12 @@ Giving
 
         &__head {
             text-align: center;
-            padding: 35px 0px 15px;
+            padding: 15px 0px 15px;
             border-radius: 5px 5px 0 0;
+
+            h2 {
+                margin-bottom: 15px;
+            }
 
             &__pricing {
                 font-size: 2.688rem;
@@ -64,33 +83,39 @@ Giving
                 font-weight: 700;
                 line-height: 1;
                 position: relative;
-            }
 
-            &__button {
-                a {
-                    background-color: #1b243f;
-                    color: #fff;
-                    display: block;
-                    margin: 8px 17px 0;
-                    border-radius: 5px;
-                    box-shadow: 0 6px 13px 2px rgba(0, 0, 0, .11);
-                    text-decoration: none;
-                    font-weight: 500;
-                    border: 0;
-                    box-sizing: border-box;
-                    text-align: center;
-                    padding: 9px 26px;
-                    color: #fff;
-                    font-size: 1.125rem;
-                    transition: all .2s ease;
+                &__button {
+                    padding: 15px 0;
 
-                    &:hover {
-                        cursor: pointer;
-                        transform: translateY(-2px);
-                        box-shadow: 0 6px 13px 2px rgba(0, 0, 0, .25);
+                    a {
+                        background-color: #1b243f;
+                        color: #fff;
+                        display: block;
+                        margin: 8px 17px 0;
+                        border-radius: 5px;
+                        box-shadow: 0 6px 13px 2px rgba(0, 0, 0, .11);
+                        text-decoration: none;
+                        font-weight: 500;
+                        border: 0;
+                        box-sizing: border-box;
+                        text-align: center;
+                        padding: 9px 26px;
+                        color: #fff;
+                        font-size: 16px;
+                        transition: all .2s ease;
+                        max-width: 200px;
+                        margin: 0 auto;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: translateY(-2px);
+                            box-shadow: 0 6px 13px 2px rgba(0, 0, 0, .25);
+                        }
                     }
+
                 }
             }
+
         }
 
         &__border {
@@ -111,19 +136,17 @@ Giving
             ul {
                 li {
                     margin-bottom: 15px;
-
+                    font-size: 14px;
                     display: flex;
                     justify-content: left;
                     align-items: flex-start;
 
                     svg {
-                        width: 20px;
-                        height: 20px;
+                        width: 8px;
+                        height: 8px;
+                        min-width: 20px;
+                        top: 3px;
 
-                        // Mobile media query
-                        .max-width-mixin(@mobile; {
-                                display: none
-                            });
                     }
                 }
             }
@@ -165,6 +188,39 @@ Giving
                 background-image: none;
                 animation: changeBackgroundColor 7s infinite;
             }
+        }
+    }
+
+    &__cta {
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid #ececec;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 20px;
+        align-items: center;
+        .max-width-mixin(@tablet; {
+            flex-direction: column;
+            gap: 30px;
+        });
+
+        &__text {
+            font-size: 26px;
+
+            // Tablet media query
+            .max-width-mixin(@tablet; {
+                    font-size: 18px;
+                });
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 20px;
+            .max-width-mixin(@tablet; {
+                flex-direction: column;
+                gap: 30px;
+            });
         }
     }
 }

@@ -22,6 +22,12 @@ Hero
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         padding: 60px 20px;
+        .max-width-mixin(@tablet; {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 20px;
+            flex-direction: column-reverse;
+        });
         img {
             box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
             border-radius: 6px;
