@@ -15,6 +15,39 @@ Hero
         justify-content: center;
         align-items: center;
     }
+    .carousel {
+        background: #222;
+        box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        vertical-align: middle;
+        border-style: none;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        margin-right: 10px;
+        /* center images in cells with flexbox */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .carousel.is-fullscreen .carousel-cell {
+        height: 100%;
+    }
+
+    .carousel-cell-image {
+        display: block;
+        max-height: 100%;
+        
+    }
+
+    .carousel.is-fullscreen .carousel-cell-image {
+        max-width: 100%;
+    }
 
     &__logo {
         .max-width-mixin(@tablet; {
@@ -76,7 +109,7 @@ Hero
 
         .max-width-mixin(@tablet; {
                 grid-template-columns: 1fr;
-                 grid-gap: 20px;
+                grid-gap: 20px;
             });
     }
 }
