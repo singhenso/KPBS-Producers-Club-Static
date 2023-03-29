@@ -9,6 +9,9 @@ Facebook Banner
 
 .producer-testimonial {
     padding: 0 0 60px;
+    .max-width-mixin(@mobile; {
+        padding: 0 0 40px;
+    });
     .testimonial-slider {
         background: #fff;
 
@@ -22,6 +25,9 @@ Facebook Banner
             max-width: 850px;
             margin: 60px auto 100px auto;
             padding: 0 20px;
+            .max-width-mixin(@mobile; {
+                margin: 40px auto 20px auto;
+            });
 
             blockquote {
                 display: block;
@@ -41,6 +47,10 @@ Facebook Banner
                 .max-width-mixin(@tablet; {
                     font-size: 20px;
                     line-height: 32px;
+                });
+                .max-width-mixin(@mobile; {
+                    font-size: 16px;
+                    line-height: 24px;
                 });
             }
 
@@ -66,7 +76,7 @@ Facebook Banner
     }
 
     .slider[data-paging="true"]:not(section) {
-        margin-bottom: 22px;
+        margin-bottom: 28px;
     }
 }
 
