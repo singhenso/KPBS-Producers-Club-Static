@@ -54,7 +54,7 @@ function copyCSS() {
 }
 
 function includeHTML() {
-  return gulp.src(['index.html'])
+  return gulp.src(['*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -92,7 +92,7 @@ function watch() {
   gulp.watch('src/css/**/*.css', gulp.series(copyCSS, browserSync.reload));
   gulp.watch('src/js/**/*.js', minifyJS);
   gulp.watch('src/img/**/*', optimizeImages);
-  gulp.watch(['index.html', 'src/blocks/**/*.html'], includeHTML);
+  gulp.watch(['*.html', 'src/blocks/**/*.html'], includeHTML);
 }
 
 exports.watch = watch;

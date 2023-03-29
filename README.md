@@ -9,9 +9,6 @@
 - **CSS**: We will write the CSS code using LESS, a preprocessor that extends the functionality of CSS.
 - **Gulp**: We will use Gulp, a task runner, to automate tasks such as preprocessing the CSS code for deployment.
 
-<!-- ## Usage
-To use this static webpage, simply run the pr. Each card will display a programming concept or term on the front, and the corresponding definition or explanation on the back. Use the app regularly to improve your memory retention and recall of important programming concepts. -->
-
 ---
 
 ## Installation
