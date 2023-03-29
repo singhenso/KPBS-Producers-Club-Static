@@ -9,6 +9,7 @@
 
 /* =========== END base remove kpbs stlye.css elements ===========*/
 @primary-purple: #0B135C;
+@primary-green: #33A99D;
 @primary-blue: #006cb4;
 @btn-border: 1px solid #2638C4;
 @btn-purple: #2638C4;
@@ -20,6 +21,24 @@
 @overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.45);
 @grey-bg: #FAFAFA;
 
+
+
+/* 
+=====================================================================
+Media Queries
+=====================================================================
+*/
+// Mixin for max-width media queries
+.max-width-mixin(@width; @rules) {
+    @media (max-width: @width) {
+      @rules();
+    }
+  }
+  
+  // Define breakpoints
+  @mobile: 425px;
+  @tablet: 768px;
+  
 /* 
 =====================================================================
 button block
