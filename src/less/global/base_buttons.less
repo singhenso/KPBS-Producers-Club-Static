@@ -149,6 +149,30 @@ button block
             }
         }
     }
+    // green
+    &.fb-arrow-btn {
+        background-color: @primary-blue;
+        color: #fff;
+        border: none;
+        transition: all 0.3s ease 0s;
+        svg {
+            transition: none !important;
+            right: 0px;
+            path {
+                fill: #fff;
+            }
+            &:hover {
+                box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, .2);
+                color: #fff;
+        
+        
+                svg {
+                    right: 4px !;
+                    position: relative;
+                }
+            }
+        }
+    }
 
     &.transparent-arrow-btn {
         background-color: transparent;
@@ -159,6 +183,8 @@ button block
             path {
                 fill: #fff;
             }
+
+        
         }
     }
 }
