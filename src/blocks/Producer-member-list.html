@@ -1954,3 +1954,61 @@
     });
 
 </script>
+<!-- 
+<script>
+// accordion.ts
+const accordion: NodeListOf<Element> = document.querySelectorAll('[data-behavior="accordion"]');
+const expandedClass: string = 'is-expanded';
+
+accordion.forEach((accordionItem: Element) => {
+  const accordionItems: NodeListOf<Element> = accordionItem.querySelectorAll('[data-binding="expand-accordion-item"]');
+
+  accordionItems.forEach((accordionItem: Element) => {
+    const triggerBtn: HTMLElement | null = accordionItem.querySelector('[data-binding="expand-accordion-trigger"]');
+
+    const setHeight = (nV: Element) => {
+      const innerContent: HTMLElement | null = nV.querySelector('.accordion__content-inner');
+      const maxHeight: string | null = innerContent ? window.getComputedStyle(innerContent).getPropertyValue('height') : null;
+      const content: HTMLElement | null = nV.querySelector('.accordion__content');
+
+      if (!content?.style.height || content.style.height === '0px') {
+        content.style.height = maxHeight || '0px';
+      } else {
+        content.style.height = '0px';
+      }
+    };
+
+    const toggleClasses = (event: Event) => {
+      const clickedItem: HTMLElement = event.currentTarget as HTMLElement;
+      const currentItem: HTMLElement = clickedItem.parentNode as HTMLElement;
+      const clickedContent: HTMLElement | null = currentItem.querySelector('.accordion__content');
+      currentItem.classList.toggle(expandedClass);
+      setHeight(currentItem);
+
+      if (currentItem.classList.contains('is-expanded')) {
+        clickedItem.setAttribute('aria-selected', 'true');
+        clickedItem.setAttribute('aria-expanded', 'true');
+        clickedContent?.setAttribute('aria-hidden', 'false');
+
+      } else {
+        clickedItem.setAttribute('aria-selected', 'false');
+        clickedItem.setAttribute('aria-expanded', 'false');
+        clickedContent?.setAttribute('aria-hidden', 'true');
+      }
+    };
+
+    triggerBtn?.addEventListener('click', (event: MouseEvent) => {
+      event.preventDefault();
+      toggleClasses(event);
+    });
+
+    triggerBtn?.addEventListener('keydown', (event: KeyboardEvent) => {
+      if (event.keyCode === 13 || event.keyCode === 32) {
+        event.preventDefault();
+        toggleClasses(event);
+      }
+    });
+  });
+});
+
+</script> -->
