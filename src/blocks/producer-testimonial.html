@@ -1,7 +1,8 @@
 <div class="producer-testimonial">
     <!-- Flickity Carousel -->
     <div class="carousel pc-container">
-        <div class="testimonial-slider">
+        <div class="testimonial-slider"
+            data-flickity='{ "fullscreen": true, "lazyLoad": 1, "wrapAround": true,"autoPlay": 3000}'>
             <div class="gallery-cell">
                 <div class="testimonial">
                     <blockquote>"Being a Producers Club member has been incredibly rewarding - from exclusive events to
@@ -43,19 +44,3 @@
         </div>
     </div>
 </div>
-<!--end of row-->
-</div>
-</div>
-<script>
-    // Initialize Flickity
-    document.addEventListener('DOMContentLoaded', function () {
-        let elem = document.querySelector('.testimonial-slider');
-        let flkty = new Flickity(elem, {
-            // Options
-            cellAlign: 'left',
-            contain: true,
-            autoPlay: 5000,
-            wrapAround: true
-        });
-    });
-</script>
