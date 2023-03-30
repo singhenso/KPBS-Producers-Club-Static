@@ -10,6 +10,42 @@ Accordion
 .producer-member-list {
     padding: 0 20px;
 
+/* begin begin Back to Top button  */
+
+.back_to_top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+    border-radius: 50%!important;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    svg {
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+    }
+
+  }
+  
+  .back_to_top:hover {
+    background: #0d1b76;
+  }
+  
+  .back_to_top-show {
+    display: block;
+  }
+  
+  
+  /* end begin Back to Top button  */
     .footnote {
         max-width: 600px;
         line-height: 1.6;
@@ -106,7 +142,7 @@ Accordion
                         height: 7px;
                         left: 0;
                         position: absolute;
-                        top: calc(5px - 4px);
+                        top: calc(7px - 4px);
                         width: 8px;
                     }
 
