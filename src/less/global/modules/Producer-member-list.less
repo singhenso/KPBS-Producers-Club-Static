@@ -11,42 +11,43 @@ Accordion
     padding: 0 20px;
     padding-top: 60px;
 
-/* begin begin Back to Top button  */
+    /* begin begin Back to Top button  */
 
-.back_to_top {
-    position: fixed;
-    bottom: 80px;
-    right: 40px;
-    z-index: 9999;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 2px;
-    display: none;
-    border-radius: 50%!important;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    svg {
-        fill: #fff;
-        width: 20px;
-        height: 20px;
+    .back_to_top {
+        position: fixed;
+        bottom: 80px;
+        right: 40px;
+        z-index: 9999;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 2px;
+        display: none;
+        border-radius: 50% !important;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+        svg {
+            fill: #fff;
+            width: 20px;
+            height: 20px;
+        }
+
     }
 
-  }
-  
-  .back_to_top:hover {
-    background: #0d1b76;
-  }
-  
-  .back_to_top-show {
-    display: block;
-  }
-  
-  
-  /* end begin Back to Top button  */
+    .back_to_top:hover {
+        background: #0d1b76;
+    }
+
+    .back_to_top-show {
+        display: block;
+    }
+
+
+    /* end begin Back to Top button  */
     .footnote {
         max-width: 600px;
         line-height: 1.6;
@@ -60,7 +61,7 @@ Accordion
         margin: 50px auto;
         border-top: 6px solid #33A99D;
         line-height: 1.6;
-        box-shadow: 0 23px 40px rgba(0,0,0,.2);
+        box-shadow: 0 23px 40px rgba(0, 0, 0, .2);
         border-radius: 6px;
 
         &__item {
@@ -161,6 +162,52 @@ Accordion
             transition: height 0.3s ease-out;
             height: 0;
             overflow: hidden;
+        }
+    }
+}
+
+.AccordionItem-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        font-size: 14px;
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+        padding-bottom: 10px;
+
+        &:before {
+            background-color: #006cb4;
+            content: "";
+            height: 100%;
+            left: 3.5px;
+            position: absolute;
+            top: calc(0.5em - 4px);
+            width: 1px;
+        }
+
+        &:after {
+            background-color: #fff;
+            border: 1px solid #006cb4;
+            border-radius: 50%;
+            box-sizing: border-box;
+            content: "";
+            display: inline-block;
+            flex-shrink: 0;
+            height: 7px;
+            left: 0;
+            position: absolute;
+            top: calc(7px - 4px);
+            width: 8px;
+        }
+
+        &:last-of-type {
+            &:before {
+                background-color: transparent;
+            }
+
         }
     }
 }
